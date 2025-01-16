@@ -1,5 +1,10 @@
 from typing import List
 
+# stack used as a string builder
+# can always add an open parentheses as long as the count of open parentheses is less than n
+# can always add a close parentheses as long as the count of close parentheses is less than open par
+# prune paths that violate the rules, recursively explore all choices, store valid strings
+
 class Solution:
     def generateParenthesis(self, n: int) -> List[str]:
         stack = []
